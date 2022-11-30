@@ -2,7 +2,7 @@ using MedicalService.Driver;
 using MedicalService.Page;
 using NUnit.Framework;
 
-namespace MedicalService
+namespace MedicalService.Tests
 {
     public class Tests
     {
@@ -34,7 +34,7 @@ namespace MedicalService
             medicalPage.BookApp.Submit();
 
             Assert.That("Appointment Confirmation", Is.EqualTo(medicalPage.Confirm.Text));
-            
+
         }
     }
 }
